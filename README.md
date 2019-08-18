@@ -65,6 +65,8 @@ Blue-green deployment is a technique that reduces downtime and risk by running t
 ```
 https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html
 ```
+This is considered with respect to AWS cost efficiency for seamless deployment on live productions systems and ability to maximize recovery process if there will be major issues when switching environments. 
+
 
 ## Built With
 
