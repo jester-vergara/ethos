@@ -25,7 +25,7 @@ These instructions will get you a copy of the project up and running on your loc
   - https://docs.microsoft.com/en-us/windows/wsl/install-win10 - Install Linux Subsystem 
   - Ubuntu or Kali (optional)
     - <img src="https://github.com/jester-vergara/ethos/blob/master/2019-08-18_12-50-19.png" width="240">
-- AWS CLI - 
+- AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html
 - Terraform - https://askubuntu.com/questions/983351/how-to-install-terraform-in-ubuntu
 - Git - https://www.liquidweb.com/kb/install-git-ubuntu-16-04-lts/
    - <img src="https://github.com/jester-vergara/ethos/blob/master/2019-08-18_22-25-41.png" width="240">
