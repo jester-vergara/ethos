@@ -1,14 +1,14 @@
-resource "aws_security_group" "Ethos-SG" {
-  description = "Ethos-SG"
+resource "aws_security_group" "terraform-blue-green" {
+  description = "Terraform Blue/Green"
   vpc_id      = "${var.vpc_id}"
-  name        = "Ethos-SG-v${var.infrastructure_version}"
+  name        = "terraform-blue-green-v${var.infrastructure_version}"
 
   tags {
-    Name = "Ethos-SG (v${var.infrastructure_version})"
+    Name = "Terraform Blue/Green (v${var.infrastructure_version})"
   }
 }
 
-resource "aws_security_group_rule" "Ethos-SG-inbound" {
+resource "aws_security_group_rule" "terraform-blue-green-inbound" {
   type              = "ingress"
   security_group_id = "${aws_security_group.terraform-blue-green.id}"
   from_port         = -1
@@ -18,9 +18,9 @@ resource "aws_security_group_rule" "Ethos-SG-inbound" {
   cidr_blocks = ["0.0.0.0/0"]
 }
 
-resource "aws_security_group_rule" "Ethos-SG-outbound" {
+resource "aws_security_group_rule" "terraform-blue-green-outbound" {
   type              = "egress"
-  security_group_id = "${aws_security_group.Ethos-SG.id}"
+  security_group_id = "${aws_security_group.terraform-blue-green.id}"
   from_port         = -1
   to_port           = 0
   protocol          = "-1"

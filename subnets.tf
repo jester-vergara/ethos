@@ -3,7 +3,7 @@ locals {
   availability_zones = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c"]
 }
 
-resource "aws_subnet" "Ethos-Subnet" {
+resource "aws_subnet" "terraform-blue-green" {
   count                   = "${local.subnet_count}"
   vpc_id                  = "${var.vpc_id}"
   availability_zone       = "${element(local.availability_zones, count.index)}"

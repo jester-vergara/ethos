@@ -1,9 +1,9 @@
-resource "aws_elb" "Ethos" {
-  name            = "Ethos-v${var.infrastructure_version}"
-  subnets         = ["${aws_subnet.Ethos.*.id}"]
-  security_groups = ["${aws_security_group.Ethos.id}"]
+resource "aws_elb" "terraform-blue-green" {
+  name            = "terraform-blue-green-v${var.infrastructure_version}"
+  subnets         = ["${aws_subnet.terraform-blue-green.*.id}"]
+  security_groups = ["${aws_security_group.terraform-blue-green.id}"]
 
-  instances = ["${aws_instance.Ethos.*.id}"]
+  instances = ["${aws_instance.terraform-blue-green.*.id}"]
 
   listener {
     instance_port     = 80
@@ -21,10 +21,10 @@ resource "aws_elb" "Ethos" {
   }
 
   tags {
-    Name = "Ethos-v${var.infrastructure_version}"
+    Name = "terraform-blue-green-v${var.infrastructure_version}"
   }
 }
 
 output "load_balancer_dns" {
-  value = "${aws_elb.Ethos.dns_name}"
+  value = "${aws_elb.terraform-blue-green.dns_name}"
 }
