@@ -3,7 +3,7 @@ variable "infrastructure_version" {
 }
 provider "aws" {
     profile =                 "terraform-user"
-    shared_credentials_file = "/home/jvergara/ethos/.aws/credentials"
+    shared_credentials_file = "/home/jvergara/.aws/credentials"
     region =                  "${var.aws_region}"
 }
 terraform {
