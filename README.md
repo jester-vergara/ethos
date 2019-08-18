@@ -20,15 +20,15 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 - Created new AWS Free Tier account to be used for this Terraform and Git environment 
-  - <img src="https://raw.githubusercontent.com/zarif-yuan/pathos/master/2019-08-18_12-50-19.png" width="240">
+  - <img src="https://github.com/jester-vergara/ethos/blob/master/2019-08-18_22-37-42.png" width="240">
 - Windows Desktop 
   - https://docs.microsoft.com/en-us/windows/wsl/install-win10 - Install Linux Subsystem 
   - Ubuntu or Kali (optional)
-    - <img src="https://raw.githubusercontent.com/zarif-yuan/pathos/master/2019-08-18_12-50-19.png" width="240">
+    - <img src="https://github.com/jester-vergara/ethos/blob/master/2019-08-18_12-50-19.png" width="240">
 - AWS CLI - 
 - Terraform - https://askubuntu.com/questions/983351/how-to-install-terraform-in-ubuntu
 - Git - https://www.liquidweb.com/kb/install-git-ubuntu-16-04-lts/
-   - <img src="https://raw.githubusercontent.com/zarif-yuan/pathos/master/2019-08-18_12-50-19.png" width="240">
+   - <img src="https://github.com/jester-vergara/ethos/blob/master/2019-08-18_22-25-41.png" width="240">
 ## Running the tests
 
 Explain how to run the automated tests for this system
