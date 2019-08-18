@@ -15,14 +15,21 @@ These instructions will get you a copy of the project up and running on your loc
 - Git Account and Environment 
 - Terraform
 
+HashiCorp Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
+
+
+
 ```
 Create AWS Free Tier account
 Configure initial root security and IAM password rules 
 Create admin and terraform user 
 Download and install Linux subsystem on Windows 10 Desktop
-
-
+Install AWS CLI, Git, Terraform
+Create Git account and local repo
 Created initial VPC as early environment configuration 
+Created S3 for terraform infrastructure metadata (repeatable deployment to Blue and Green)
+Prepare terraform codes
+Commit often and use Terraform plan
 ```
     
 
@@ -39,19 +46,16 @@ Created initial VPC as early environment configuration
 - Git - https://www.liquidweb.com/kb/install-git-ubuntu-16-04-lts/
    - <img src="https://github.com/jester-vergara/ethos/blob/master/2019-08-18_22-25-41.png" width="240">
    
-## Running the tests
-
+## Running the tests...
+```
 Explain how to run the automated tests for this system
-
+```
 ### Break down into end to end tests
 
-Explain what these tests test and why
+-Check API for continuous integration
+-Configure CI tests such as code linters (which check style formatting), security checks, code coverage, and other checks against new code commits in a repository
 
-```
-Give an example
-```
-
-### And coding style tests
+### And coding style tests...
 
 Explain what these tests test and why
 
@@ -101,3 +105,4 @@ Public
 * https://linoxide.com/devops/install-terraform-provision-aws-ec2-instance/
 * https://github.com/santiagopoli/terraform-examples
 * https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html
+* https://gist.github.com/neilstuartcraig/0ccefcf0887f29b7f240
