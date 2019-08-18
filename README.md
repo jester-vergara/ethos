@@ -15,7 +15,16 @@ These instructions will get you a copy of the project up and running on your loc
 - Git Account and Environment 
 - Terraform
 
-    -Created initial VPC as early environment configuration 
+```
+Create AWS Free Tier account
+Configure initial root security and IAM password rules 
+Create admin and terraform user 
+Download and install Linux subsystem on Windows 10 Desktop
+
+
+Created initial VPC as early environment configuration 
+```
+    
 
 ### Installing
 
@@ -29,6 +38,7 @@ These instructions will get you a copy of the project up and running on your loc
 - Terraform - https://askubuntu.com/questions/983351/how-to-install-terraform-in-ubuntu
 - Git - https://www.liquidweb.com/kb/install-git-ubuntu-16-04-lts/
    - <img src="https://github.com/jester-vergara/ethos/blob/master/2019-08-18_22-25-41.png" width="240">
+   
 ## Running the tests
 
 Explain how to run the automated tests for this system
@@ -51,7 +61,10 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Blue-green deployment is a technique that reduces downtime and risk by running two identical production environments called Blue and Green. At any time, only one of the environments is live, with the live environment serving all production traffic. 
+```
+https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html
+```
 
 ## Built With
 
@@ -62,6 +75,7 @@ Add additional notes about how to deploy this on a live system
 ## Contributing
 
 For further questions or concerns - send me an email <-jester.vergara@gmail.com->
+Feel free in contributing or enhancing any design
 
 ## Versioning
 
@@ -84,3 +98,4 @@ Public
 * https://www.terraform.io/docs/providers/aws/#environment-variables
 * https://linoxide.com/devops/install-terraform-provision-aws-ec2-instance/
 * https://github.com/santiagopoli/terraform-examples
+* https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html
